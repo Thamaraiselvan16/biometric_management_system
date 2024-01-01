@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Login Page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/emplogin.css') }}">
+    <link rel="stylesheet" href="\static\css\emplogin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+<div class="container">
+    <div class="left-panel">
+        <h1>Biometric Management System <br><span style="font-size: 20px;"><b>Please login to access</b></span></h1>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+
+    <div class="container1">
+        <a href="/" class="home"><i class="fas fa-home"></i></a>
+    </div>
+    <div class="right-panel">
+        <h1 style="text-align: center;"><b>Employee Login</b></h1>
+        <form action="/employee" method="post">
+            <div class="form-group">
+                <label for="employee_username">Employee Username</label>
+                <input type="text" id="employee_username" placeholder="Enter your employee username" name="employee_username" required>
+            </div>
+            <div class="form-group">
+                <label for="employee_password">Password</label>
+                <input type="password" placeholder="Enter your password" id="employee_password" name="employee_password" required>
+            </div>
+            <div style="display: flex; justify-content: center;">
+                <button type="submit" class="btn">Login</button>
+            </div>
+            <div>
+                <p class="register-link">any error? <a href="mailto:tthamaraiselvan2002@gmail.com"><b>click here</b></a></p>
+            </div>
+        </form>
+        {% if message %}
+        <p>{{ message }}</p>
+        {% endif %}
+    </div>
+</div>
+</body>
+</html>
+

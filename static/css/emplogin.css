@@ -1,0 +1,167 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e5e5cf;
+    background-image: url("https://www.frost.com/wp-content/uploads/2021/11/GettyImages-1175502114-1.jpg"); /* Replace with the absolute path of your image */
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position:center;
+    backdrop-filter: blur(30px);
+}
+.container1 {
+    background-color: rgba(255, 255, 255, 0.6);
+      color: black;
+      border: none;
+      padding: 5px 10px;
+      text-align:center;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      border-radius: 4px;
+      position: absolute;
+      top: 0px;
+      left: 5px;
+  }
+  .container1:hover{
+    background-color: #fff;
+  }
+  .home {
+    color: black;
+    text-decoration: none;
+  }
+  div.container1  a:hover
+   {
+    color: #4CAF50; /* Change the link color on hover */
+    transition: color 0.2s ease-in-out;
+  }
+  
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.left-panel {
+    flex: 1;
+    padding: 50px;
+    max-width: 22%;
+    height: 50%;
+    color: #ffffff;
+    text-align: center;
+    background-color: rgba(55, 153, 173, 0.209);
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    display: flex; /* Center the content vertically and horizontally */
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(8px);
+}
+
+.left-panel h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.right-panel {
+    flex: 1;
+    padding: 50px;
+    max-width: 22%;
+    height: 50%;
+    background-color: rgba(255, 255, 255, 0.6); /* Background color with transparency */
+    backdrop-filter: blur(8px); /* Blurring effect */
+    box-shadow: 2px;
+    border-top-right-radius: 8px;
+    border-BOTTOM-right-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.right-panel h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #4CAF50;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #000000;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #4CAF50;
+    border-radius: 100px;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.btn {
+    height: 40px;
+    width: 200px;
+    padding: 0 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0 auto;
+}
+
+/* Add a hover effect to the button */
+.btn:hover {
+    background-color: #3fc643;
+}
+
+/* Add a focus effect to the button */
+.btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px #4CAF50;
+}
+
+/* Disable the button animation on mobile devices */
+@media (max-width: 768px) {
+    .btn {
+        transition: none;
+    }
+}
+
+.register-link {
+    margin-top: 30px;
+    text-align: center;
+    color: #454444;
+    font-size: 17px;
+}
+
+.register-link a {
+    font-size: 15px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.register-link a:hover {
+    text-decoration: underline
+}
+/* Center the container */
+@media screen and (max-width: 768px) {
+    .container {
+        height: auto;
+    }
+    .left-panel, .right-panel {
+        max-width: 100%;
+        height: auto;
+    }
+}
